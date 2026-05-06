@@ -11,6 +11,8 @@
 
 while (true)
 {
+    Console.Clear();
+
     Console.WriteLine("--- Rental Kendaraan ---");
     Console.WriteLine("\n Daftar Kendaraan");
 
@@ -78,6 +80,9 @@ while (true)
     {
         Console.WriteLine("\nTidak valid");
     }
+
+    Console.WriteLine("\nTekan ENTER untuk mengulang");
+    Console.ReadLine();
 }
 class Kendaraan
 {
@@ -133,11 +138,8 @@ class Kendaraan
     //method
     public void tampilkanInfo()
     {
-        Console.WriteLine($"Nama Kendaraan: {_namaKendaraan}");
-        Console.WriteLine($"Harga Sewa Per Hari: {_hargaSewaPerHari}");
-        Console.WriteLine($"Nomor Polisi: {_nomorPolisi}");
-        Console.WriteLine($"Ketersediaan: {(_isAvailable ? "Tersedia" : "Tidak Tersedia" )}");
-        
+        Console.WriteLine($"{_namaKendaraan} | {_nomorPolisi} | Rp {_hargaSewa} / hari | {(_isAvailable ? "Tersedia" : "Tidak tersedia")} ");
+
     }
 
     public void UbahStatus()
