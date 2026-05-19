@@ -138,7 +138,7 @@ class Kendaraan
     //method
     public void tampilkanInfo()
     {
-        Console.WriteLine($"{_namaKendaraan} | {_nomorPolisi} | Rp {_hargaSewa} / hari | {(_isAvailable ? "Tersedia" : "Tidak tersedia")} ");
+        Console.WriteLine($"{_namaKendaraan} | {_nomorPolisi} | Rp {_hargaSewaPerHari} / hari | {(_isAvailable ? "Tersedia" : "Tidak tersedia")} ");
 
     }
 
